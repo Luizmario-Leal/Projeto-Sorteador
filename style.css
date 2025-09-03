@@ -82,4 +82,7 @@ button:active{
     input.input-min{
         margin: 0 0 20px;
     }
+    img{
+        height: 180px;
+    }
 }
