@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: 'Story Script', sans-serif;
+    font-family: 'Story Script', 'Playfair Display', serif;
 }
 body{
     background: rgb(0, 201, 201);
@@ -25,12 +25,12 @@ h2{
     line-height: 38px;
     color: #ffffff;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 70px;
 }
 input{
     background: rgba(255, 255, 255, 0.25);
-    border: 1px, solid, rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 14px;
     width: 300px;
     height: 75px;
@@ -53,7 +53,7 @@ button{
     color: #ffffff;
     font-weight: 700;
     font-size: 36px;
-    margin-top: 80px;
+    margin-top: 50px;
     border: none;
     cursor: pointer;
 }
@@ -62,4 +62,24 @@ button:hover{
 }
 button:active{
     opacity: 0.5;
+}
+#resultado {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+@media screen and (max-width: 650px){
+    input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    input.input-min{
+        margin: 0 0 20px;
+    }
 }
